@@ -23,6 +23,9 @@ class MainScreen extends StatelessWidget {
                       width: 150,
                     ),
                   ),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Text(
                     "pomodoro",
                     style: TextStyle(
@@ -41,7 +44,7 @@ class MainScreen extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () => {
-                      print("Tapped"),
+                      // print("Tapped"),
                       Navigator.pushNamed(context, '/timer')
                     },
                     child: Container(
